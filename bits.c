@@ -10,11 +10,10 @@ int main(int argv, char** argc){
 	for (ciclo=1; ciclo<=16; ciclo++){
 		resultado=valorUsuario&mascara;
 		if (resultado==1){
-			cont=cont+1;
+			cont++;
 		}
 		valorUsuario=valorUsuario>>1;
 	}
 	printf("Bits prendidos:" "%d", cont);
-	
 	return 0;
 }
